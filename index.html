@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infobox</title>
+    <script src="infobox/infoBox.js"></script>
+    <link rel="stylesheet" href="infobox/infoBoxStyle.css">
+</head>
+
+<body>
+    <div id="infoBox">
+        <!--This Div is where the infobox appears-->
+        <!--Don´t delete it-->
+
+        <!--Change the box style in infoBoxStyle.css-->
+    </div>
+
+    <div>
+        <!--Your website comes here (; -->
+        <h1>This is an exemple of the Infobox</h1>
+        <hr>
+        <button onclick="openInfoBox()">Click Here</button>
+    </div>
+
+    <script>
+        /* Infobox uses the box name, the text to appear in the box, an image, the button text,
+         the function when button is pressed, the function when X is pressed and the button colors */
+        exempleBox = new Infobox("infobox exemple", "This is an infobox", "exemple_img.png", "button", "buttonClick()", "closeBox()", "white", "purple");
+
+        function openInfoBox() {
+            //use open() to open it
+            exempleBox.open();
+        }
+
+        function closeBox() {
+            //use close() to close it
+            exempleBox.close();
+        }
+
+        function buttonClick() {
+            //the function called when the button is pressed
+            alert("button pressed!");
+        }
+    </script>
+</body>
+
+</html>

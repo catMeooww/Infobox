@@ -1,0 +1,49 @@
+#infoBox{
+    position: fixed; 
+    top:5%;
+    left: 101%;
+    width: 80%;
+    height: 90%;
+    text-align: left;
+    z-index: 100;
+    /* Configure the box here */
+    background-color: rgba(0, 0, 0, 0.700); /* Use this if you want a color as bg */
+    background-image: url(../box_bg.png); /* Use this if you want an image as bg */
+    border: 5px ridge black; /* Configure box border */
+    color: aliceblue; /* Configure box's texts color */
+}
+
+/* Box elements */
+
+#infobox_close{
+    border: 2px outset rgba(0, 0, 0, 0.500);
+    background-color: rgba(0, 0, 0, 0.500);
+    color:brown;
+    margin-right: 5;
+    font-size: 110%;
+}
+#infobox_close:hover{
+    color: red;
+    font-size: 130%;
+}
+
+#infobox_main{
+    text-align: center;
+}
+
+#infobox_use{
+    padding: 2%;
+    min-width: 40%;
+    border: 2px outset rgba(0, 0, 0, 0.400);
+}
+
+#infobox_img{
+    width: 110px;
+    background-color: rgba(0, 0, 0, 0.500);
+    border: 2px outset rgba(0, 0, 0, 0.500);
+    padding: 2px;
+}
+#infobox_img:hover{
+    width: 130px;
+    border: 2px outset rgba(0, 0, 0, 0.700);
+}
